@@ -1,0 +1,86 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size : 15px;
+    background-color: hsl(233, 47%, 7%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.whole-container{
+    background-color: hsl(244, 38%, 16%);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    padding: 50px;
+    width: 45%;
+}
+
+header{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+main {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+}
+
+.h3-container{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-p{
+   color:  hsla(0, 0%, 100%, 0.6);
+   display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.queries{
+    margin-right: 10px;
+}
+
+.image-container {
+    height: 53.2vh;
+    width: 50%;
+    /* background-blend-mode: hsl(277, 64%, 61%); */
+}
+
+ .image-container img{
+    height: 100%;
+    width: 100%;
+} 
+
+.image-container::before{
+    content: '';
+    height: 53.2vh;
+    width: 35%;
+    background: hsl(277, 98%, 18%); 
+    position: absolute;
+    opacity: 70%;
+}
